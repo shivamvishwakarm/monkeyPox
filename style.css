@@ -1,0 +1,356 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fcfcfc;
+    color: rgb(198, 0, 0)    ;
+    transition: all 0.5s ease-in-out;
+    overflow: none;
+}
+
+
+/* header */
+
+.home-bg {
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(to right, rgba(16, 16, 16, 0.7),rgba(16, 16, 16, 0.7)), url('monkeypox.jpg');
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(252, 225, 225, 0.6)), url("homebg.jpg"); */
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Navigation */
+
+.navbar {
+    background-color: #4caf50;
+    transition: all 0.2s ease-in-out;
+
+    /* position: relative;
+    top: 7px;
+    border-radius: 2px; */
+}
+
+
+/* Navigation logo img */
+
+#logo {
+    font-size: 1.7rem;
+    /* letter-spacing: 3px;
+    height: 50px;
+    padding-left: 10px; */
+    margin: 7px;
+    font-family: 'Recursive', sans-serif;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+/* #logo:hover {
+    filter: invert();
+} */
+
+#nav-menu {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+#nav-menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 9px 11px;
+    letter-spacing: 2px;
+    margin: 0px 18px;
+    font-size: 25px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+#nav-menu a:hover {
+    /* color: rgb(170, 255, 0); */
+    text-decoration: underline;
+}
+
+.container {
+    /* border: 2px solid #fff; */
+    padding: 26px 8px;
+    margin: 21px 19px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
+.container p {
+    padding: 5px
+}
+
+.container p,
+h2 {
+    text-align: center;
+    font-family: 'Fugaz One', cursive;
+    padding-top: 80px;
+    color: white;
+    font-size: 59px;
+}
+
+
+
+
+
+
+/* banner-section */
+/* rgba(255, 0.6, 0.3) */
+#banner-section{
+    /* background-image: linear-gradient(to right, rgba(16, 16, 16, 1),rgba(255, 165, 0,0)), url('bg.jpg'); */
+    /* background-image: radial-gradient(at center, 
+        rgba(210, 191, 191,1),rgba(35, 33, 33,1)); */
+        /* background-image: linear-gradient(30deg, 
+        rgba(210, 191, 191,1),rgba(35, 33, 33,1)); */
+    display: flex;
+    flex-direction: column;
+    color: red  ;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: 2px solid green; */
+}
+
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    /* border:  2px solid purple; */
+    justify-content: center;
+    align-items: center;
+    margin: 100px 50px;
+
+}
+
+
+
+/* cards section */
+
+.goals{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid rgb(47, 255, 0); */
+    border-radius: 10px;
+    
+}
+
+.goals-img > img{
+    text-align: center;
+    padding-right: 10px;
+    border-radius: px;
+
+}
+.goals-opposite{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid rgb(47, 255, 0); */
+    border-radius: 5px;
+    
+}
+
+
+
+.goals-opposite-img {
+    width: 130%;
+
+}
+
+.goals-opposite-img > img{
+    text-align: center;
+    padding-left: 10px;
+    border-radius: 5px;
+
+}
+
+.item{
+    padding: 2px;
+}
+
+
+
+/* footer */
+
+.footer{
+    background-color: rgb(61, 179, 61);
+    color: rgb(131, 184, 131);    
+    font-family: Recursive,sans-serif;
+}
+
+footer {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.social-media{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.icon{
+    padding: 10px;
+}
+
+
+/* information css */
+.information-bg{
+    background-image: linear-gradient(to right, rgba(16, 16, 16, 0.7),rgba(16, 16, 16, 0.7)), url('information.jpg');
+}
+
+.whtisths{
+    color: black;
+     background: #d3e7d4;
+     text-align: left;
+
+}
+
+.content{
+    text-align: left;
+    padding: 30px 100px;
+}
+
+.whtisths h2{
+    text-align: left;
+}
+
+.para{
+    padding: 30px 100px;
+    font-size: 30px;
+
+}
+
+.paraItem{
+    display: inline;
+}
+
+.paraItem:after {
+    content:"\a";
+    white-space: pre;
+}
+
+
+
+
+
+
+
+
+/* responsibe  */
+@media(max-width:797px) {
+    .goals{
+        flex-direction: column;
+    }
+    .goals-opposite{
+        flex-direction: column;
+    }
+    .food{
+        padding: 40px 50px;
+    }
+    .goals-opposite-img{
+        width: auto;
+    }
+
+    .img  img{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .order-info{
+        padding: 0;
+        width: -webkit-fill-available;
+        width: fit-content;
+
+    }
+
+    .order-info  h2{
+        font-size: 10vw;
+        width: auto;
+
+    }
+
+    #brand-zomato img 
+        {
+            width: 60%;
+        }
+
+    .order-brand{
+        justify-content: space-evenly;
+    }
+        
+    .story p, .story-opposite p{
+        font-size: 15px;
+    }
+
+    .home-bg {
+        height: auto;
+    }
+
+    .order-brand img{
+        width: 60%;
+
+    }
+
+    .category{
+        flex-direction: column;
+    }
+
+    #brand-swiggy {
+        padding: 0px;
+        margin: 0;
+    }
+
+    .veg{
+        border-right: none;
+    }
+
+    .non-veg{
+        border-left: none;
+    }
+    
+}
+
+
+@media(max-width:1100px) {
+
+    .img img{
+        width: 100%;
+    }
+
+    .order-brand{
+        width: auto;
+    }
+
+    .intro{
+        flex-direction: row;
+    }
+
+    #banner-section{
+        padding: 0;
+    }
+}
